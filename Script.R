@@ -70,3 +70,18 @@ num_logical <- c(1, 2, 3, TRUE)
 char_logical <- c("a", "b", TRUE)
 tricky <- c(1, 2, 3, "4")
 
+#subsetting
+kamer_type[2]
+kamer_type[c(3,2)]
+meer_kamer_types <- kamer_type[c(1,2,3,4,3,1,5)]
+meer_kamer_types
+
+hh_leden[hh_leden > 5]
+
+hh_leden[hh_leden < 4 | hh_leden > 7]
+
+bezit[bezit == "auto" | bezit == "GSM"]
+bezit %in% c("auto", "fiets")
+
+bezit %in% c("auto", "motor", "boot", "teststestet")
+bezit
