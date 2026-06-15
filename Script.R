@@ -85,3 +85,22 @@ bezit %in% c("auto", "fiets")
 
 bezit %in% c("auto", "motor", "boot", "teststestet")
 bezit
+
+#missing values
+kamers <- c(2, 5, 6, 7, NA, 3)
+mean(kamers, na.rm =TRUE)
+max(kamers, na.rm =TRUE)
+
+kamers[!is.na(kamers)]
+sum (is.na(kamers))
+na.omit(kamers)
+kamers[complete.cases(kamers)]
+
+#assignment 3
+rooms <- c(1,2,1,1,NA,3,1,3,2,1,1,8,3,1,NA,1)
+rooms_no_na <- rooms[!is.na(rooms)]
+
+rooms_above_2 <- rooms_no_na [rooms_no_na > 2]
+
+
+median(rooms_no_na)
