@@ -10,6 +10,8 @@ install.packages ("tidyverse")
 
 download.file("https://github.com/datacarpentry/r-socialsci/blob/main/episodes/data/SAFI_clean.csv", destfile = "SAFI_clean.csv", quiet = FALSE, mode = "w",
               cacheOK = TRUE)
+download.file("https://github.com/datacarpentry/r-socialsci/blob/main/episodes/data/interviews_plotting.csv", destfile = "interviews_plotting.csv", quiet = FALSE, mode = "w",
+              cacheOK = TRUE)
 
 #rekenen
 3+5
