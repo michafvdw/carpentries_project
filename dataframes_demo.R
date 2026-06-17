@@ -23,3 +23,5 @@ nrow(data)
 ncol(data)
 summary(data)
 
+#subsetting dataframes
+
